@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="content">
+    <div class="images"><img src="./images/logo.svg" alt="" class="image"></div>
+
+    <section class="hero">
+      <div class="inputs-and-selection">
+        <div class="inputs">
+          <div class="heading">Bill</div>
+          <i><img src="./images/icon-dollar.svg" alt=""></i>
+          <input type="number" name="" id="" class="input-box" placeholder="0">
+        </div>
+        <div class="heading">Select Tip %</div>
+        <div class="selection">
+          <button value="5" name="5" class="five">
+            5%
+          </button>
+          <button value="10" name="10" class="ten">10%</button>
+          <button value="15" name="15" class="fifteen">15%</button>
+          <button value="25" name="25" class="twenty-five">25%</button>
+          <button value="50" name="50" class="fifty">50%</button>
+          <button value="custom" name="custom">Custom</button>
+        </div>
+        <div class="inputs">
+          <div class="heading">Number of People</div>
+          <i><img src="./images/icon-person.svg" alt=""></i>
+          <input type="number" name="" id="" class="input-box-2" placeholder="0">
+        </div>
+      </div>
+
+      <div class="result-and-output">
+        <div class="description">
+          <div class="analytics">
+            Tip Amount
+            <div class="analytics-desc">/ person</div>
+        </div>
+        <div class="result">$0.00</div>
+      </div>
+
+        <div class="description-2">
+          <div class="analytics-2">
+            Total
+            <div class="analytics-desc">/ person</div>
+          </div>
+          <div class="result-2">$0.00</div>
+      </div>
+
+        <div class="button"><button>Reset</button></div>
+        
+      </div>
+    </section>
+  </main>
+  
+  <script src="./app.js"></script>
+</body>
+</html>

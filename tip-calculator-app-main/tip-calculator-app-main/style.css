@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(185, 41%, 84%);
+    font-family: 'Space Mono';
+}
+.images{
+    text-align: center;
+}
+
+.content{
+    width: 50%;
+    margin: 2rem auto;
+    
+}
+.hero{
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+}
+.inputs-and-selection{
+    flex: 1;
+}
+.inputs{
+    margin-block: 1rem;
+    margin-bottom: 2rem;
+}
+
+.heading{
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(184, 14%, 56%);
+}
+.input-box, .input-box-2{
+    width: 90%;
+    padding-block: .5rem;
+    border: none;
+    background: hsl(189, 41%, 97%);
+    border-radius: 3px;
+    color:hsl(183, 100%, 15%);
+    text-align: right;
+    padding-inline: 1rem;
+}
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+i{
+    position: absolute;
+    padding: .3rem;
+    margin-left: .5rem;
+}
+.selection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    color: white;
+    text-align: center;
+    grid-gap: .5rem;
+    justify-content: center;
+   
+}
+.selection button{
+    background: hsl(183, 100%, 15%);
+    padding-block: .5rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Space Mono';
+    cursor: pointer;
+}
+.result-and-output{
+    flex: 1;
+    background: hsl(183, 100%, 15%);
+    margin-left: 1rem;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.result-and-output button{
+    margin-top: 4rem;
+    border: none;
+    width: 90%;
+    padding-block: .5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: hsl(172, 67%, 45%);
+    font-weight: 600;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+
+.description, .description-2{
+    padding-block: 1.4rem;
+    display: flex;
+}
+.analytics, .analytics-2{
+    flex: 1;
+}
+.analytics-desc{
+    font-size: .7rem;
+    opacity: .5;
+}
+.result, .result-2{
+    font-family: 'Space Mono';
+    color:hsl(172, 67%, 45%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.button{
+    text-align: center;
+}
+@media (max-width: 50em){
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    .hero{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2rem;
+        margin-top: 1rem;
+    }
+    .selection{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        align-items: center;
+        justify-content: center;
+        grid-gap: 1rem;
+        width: 90%;
+    }
+    .result-and-output{
+        margin-left: 0;
+    }
+    .result-and-output button{
+        margin-top: .5rem;
+    }
+    .description, .description-2{
+        text-align: left;
+    }
+}
